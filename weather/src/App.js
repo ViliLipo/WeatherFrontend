@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import locationService from './services/locations'
 import observationService from './services/observations'
 import Location from './components/location'
-import TimePicker from 'react-bootstrap-time-picker'
-import DatePicker from 'react-date-picker'
 import './App.css'
 class App extends Component {
   constructor(props)  {
@@ -20,9 +17,9 @@ componentDidMount() {
   })
 }
 async submitObservation(obs) {
-  console.log(obs)
+  //console.log(obs)
   obs = await observationService.create(obs)
-  console.log(obs)
+  //console.log(obs)
   const findId = (a) =>{
     return a._id === obs.location._id
   }

@@ -18,8 +18,8 @@ import './location.css'
    }
 
    renderDetailed(location) {
-     console.log(location)
-     console.log(location.observations)
+     //console.log(location)
+     //console.log(location.observations)
      const maxTemp = helper
        .maxTemp(helper.filter24h(location.observations)).temperature
      const minTemp = helper

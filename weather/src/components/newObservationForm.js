@@ -37,11 +37,11 @@ import './form.css'
       return
     }
     let da = new Date()
-    console.log("date", this.state.date)
-    console.log("time", this.state.time)
+    //console.log("date", this.state.date)
+    //console.log("time", this.state.time)
     da = da.setTime(this.state.date)
     da = da + this.state.time * 1000
-    console.log("combine?" , new Date(da))
+    //console.log("combine?" , new Date(da))
     const observation = {
       location : this.props.location,
       temperature : this.state.temperature,
