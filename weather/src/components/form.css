@@ -1,0 +1,19 @@
+.Form-all {
+  background-color: #e8e8ef
+}
+.Form-message {
+  border: solid;
+  border-color: green;
+  color: green;
+}
+
+.Form-submit {
+  padding:5px;
+}
+.Form-time {
+  padding:5px;
+}
+.Form-temperature {
+  padding: 0px;
+  width: 50px;
+}

@@ -1,0 +1,14 @@
+
+.Location-city {
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: #8a8c91;
+}
+
+.Location-city:hover {
+  background-color: #d5dae2;
+}
+.Location-temperatures {
+  background-color: #b8b8c4;
+  color: black;
+}
