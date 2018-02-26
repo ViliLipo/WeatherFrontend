@@ -7,18 +7,18 @@ const filter24h = (observationList) => {
     // DEBUG: console.log(dif)
     return dif <= (24*60*60*1000)
   }
-  console.log(observationList)
-  console.log(observationList.filter(f))
+  //console.log(observationList)
+  //console.log(observationList.filter(f))
   try {
       return observationList.filter(f)
   }catch (exception) {
-    console.log("empty array")
+    //console.log("empty array")
     return []
   }
 }
 const latest = (observationList) => {
-  console.log("Latest")
-  console.log(observationList)
+  //console.log("Latest")
+  //console.log(observationList)
   const reducer = (a, b) => {
     let dateA = new Date(a.time)
     let dateB = new Date(b.time)
@@ -30,7 +30,7 @@ const latest = (observationList) => {
   try {
       return observationList.reduce(reducer)
   }catch (exception) {
-    console.log("empty array")
+    //console.log("empty array")
     return []
   }
 
