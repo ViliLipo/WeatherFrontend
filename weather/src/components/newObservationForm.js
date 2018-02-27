@@ -10,7 +10,8 @@ import './form.css'
        time: new Date(0),
        date: new Date(),
        temperature:0,
-       message: null
+       message: null,
+       error: null
      }
      this.handleTimeChange = this.handleTimeChange.bind(this)
    }
@@ -30,9 +31,9 @@ import './form.css'
    submit = (event) => {
      event.preventDefault()
     if( 80 < this.state.temperature < -70) {
-      this.setState({message:"Check temperature"})
+      this.setState({error:"Check temperature"})
       setTimeout(() => {
-        this.setState({message:null})
+        this.setState({error:null})
       }, 5000)
       return
     }
@@ -42,6 +43,13 @@ import './form.css'
     da = da.setTime(this.state.date)
     da = da + this.state.time * 1000
     //console.log("combine?" , new Date(da))
+    if (da > new Date()) {
+      this.setState({error:"It is not allowed to observe the future"})
+      setTimeout(() => {
+        this.setState({error:null})
+      }, 5000)
+      return
+    }
     const observation = {
       location : this.props.location,
       temperature : this.state.temperature,
@@ -82,6 +90,8 @@ import './form.css'
           </form>
             {this.state.message && <div className="Form-message">
           {this.state.message} </div>}
+          {this.state.error && <div className="Form-error">
+        {this.state.error} </div>}
        </div>
      )
    }

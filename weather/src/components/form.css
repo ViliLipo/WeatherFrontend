@@ -8,6 +8,16 @@
   border: solid;
   border-color: green;
   color: green;
+  margin: 2px;
+  padding: 2px;
+}
+
+.Form-error {
+  border: solid;
+  border-color: #FF3B3F;
+  color: red;
+  margin: 2px;
+  padding: 2px;
 }
 
 .Form-submit {
