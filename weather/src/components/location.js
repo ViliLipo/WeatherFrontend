@@ -32,13 +32,13 @@ import './location.css'
         </div>
         <div className="Location-temperatures">
           {current !== undefined &&<div>
-            Current temperature {current}
+            Most recent temperature {current}c
           </div>}
           {maxTemp !== undefined && <div>
-            Maximium temperature in the last 24h is {maxTemp}
+            Maximium temperature in the last 24h is {maxTemp} c
           </div>}
           {minTemp !== undefined && <div>
-            Minimium temperature in the last 24h is {minTemp}
+            Minimium temperature in the last 24h is {minTemp} c
           </div>}
         </div>
         <NewObservationForm send={this.props.send} location={location} />

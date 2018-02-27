@@ -1,12 +1,15 @@
 body {
-background-color: gray;
+background-image: url("./blue_sky.jpeg");
+background-size:cover;
 padding: 0;
+repeat: no-repeat;
+background-attachment: fixed;
+font-family: sans-serif;
 }
 
 .App {
   text-align: left;
   padding:20px;
-  background-image: linear-gradient(white, gray);
 }
 
 .App-logo {
@@ -15,12 +18,13 @@ padding: 0;
 }
 
 .App-header {
-  background-color: #222;
-  height: 100px;
-  padding: 20px;
-  color: white;
+  background-color: #CAEBF2;
+  padding: 10px;
+  color: #A9A9A9;
   margin-top: 0;
   margin-left: 0;
+  border-radius: 25px;
+  text-align: center;
 }
 
 .App-title {
@@ -29,11 +33,18 @@ padding: 0;
 
 .App-locations-title {
   font-size: 1.5em;
+  background-color:  #CAEBF2;
+  border-top: 1px;
+  border-style: groove;
+  border-color:#CAEBF2;
+  color:black;
+
 }
 
 .App-locations {
   border-style: inset;
-  border-color: #222;
+  border-color: #CAEBF2;
+  background-color:  #CAEBF2;
 }
 
 

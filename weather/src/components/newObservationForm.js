@@ -61,7 +61,7 @@ import './form.css'
    render() {
      return (
        <div className="Form-all">
-          <p> new observation </p>
+          <p> Add new observation </p>
           <form onSubmit={this.submit}>
             <div>
               temperature
@@ -73,7 +73,7 @@ import './form.css'
             </div>
             <div>
               <DatePicker value={this.state.date}
-               onChange={this.handleDateChange}/>
+               onChange={this.handleDateChange} className="Form-date"/>
               <TimePicker className="Form-time"value={this.state.time}
               onChange={this.handleTimeChange}
                step={1}/>

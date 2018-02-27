@@ -1,5 +1,8 @@
 .Form-all {
-  background-color: #e8e8ef
+  background-color: #EFEFEF;
+  padding:10px;
+  margin: 10px;
+  border-bottom:  #FF3B3F, solid, 6px;
 }
 .Form-message {
   border: solid;
@@ -8,12 +11,31 @@
 }
 
 .Form-submit {
+  margin: 5px;
   padding:5px;
+  background-color: #FF3B3F;
+  border: none;
+  color: white;
+  font-style: bold;
+  border-radius: 10px;
 }
 .Form-time {
+  margin:5px;
   padding:5px;
+  background-color: #FF3B3F;
+  border:none;
+  color: white;
+  font-style: bold;
+  border-radius: 10px;
 }
 .Form-temperature {
   padding: 0px;
   width: 50px;
+}
+.Form-date {
+  margin:5px;
+  padding:5px;
+  background-color: #EFEFEF;
+  border:none;
+  font-style: bold;
 }

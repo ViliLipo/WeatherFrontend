@@ -2,13 +2,24 @@
 .Location-city {
   font-size: 1.3em;
   font-weight: bold;
-  background-color: #8a8c91;
+  background-color: #CAEBF2;
 }
 
 .Location-city:hover {
-  background-color: #d5dae2;
+  background-color: #f7cac9;
 }
 .Location-temperatures {
-  background-color: #b8b8c4;
+  margin: 10px;
+  padding: 10px;
+  background-color:  #EFEFEF;
+  border-top: 0px;
+  border-left: 0px;
+  border-right:  0px;
   color: black;
+  border-style: solid;
+  border-color: #FF3B3F;
+}
+
+.Location.all {
+  background-color: inherit;
 }
