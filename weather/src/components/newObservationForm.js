@@ -57,7 +57,7 @@ import './form.css'
     }
     this.props.send(observation)
     this.setState({
-      time: new Date(),
+      time: new Date(0),
       date:new Date(),
       temperature:0,
       message: "Submitted new observation"
@@ -77,7 +77,7 @@ import './form.css'
                name="temperature"
                value={this.state.temperature}
                onChange={this.handleTempChange}
-              />
+              /> c
             </div>
             <div>
               <DatePicker value={this.state.date}

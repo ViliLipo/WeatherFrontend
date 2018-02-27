@@ -3,6 +3,8 @@
   font-size: 1.3em;
   font-weight: bold;
   background-color: #CAEBF2;
+  padding:2px;
+  border-bottom: #FF3B3F solid 1px;
 }
 
 .Location-city:hover {

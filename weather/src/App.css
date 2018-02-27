@@ -33,9 +33,10 @@ font-family: sans-serif;
 
 .App-locations-title {
   font-size: 1.5em;
+  padding: 5px;
   background-color:  #CAEBF2;
   border-top: 1px;
-  border-style: groove;
+  border-style: solid;
   border-color:#CAEBF2;
   color:black;
 
